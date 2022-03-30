@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+#body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  font-style: italic;
+}
+
+.container {
+  flex: 1 1 0;
+  overflow: auto;
+
+  padding: 15% 10%;
+  background: #000;
+
+  display: flex;
+  flex: wrap;
+  gap: 100px;
+}
+
+/** content box **/
+.content-box {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-box img {
+  width: 15vw;
+}
+
+.content-box-text,
+.content-box-text * {
+  color: #999;
+}
+
+.content-box-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.content-box-grid * {
+  height: 10rem;
+  color: #000;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+
+  border-radius: 5px;
+}
+/** login box **/
+
+.login-box {
+  flex: 1 1 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-box-form {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.login-box-form * {
+  border-radius: 50px;
+}
+
+.login-box-form button {
+  position: relative;
+  width: 40%;
+  height: 2.5rem;
+
+  background: rgb(255, 155, 6);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  cursor: pointer;
+}
+
+.login-box-form button:hover {
+  background: rgba(255, 155, 6, 0.8);
+}
+
+.login-box-form-input {
+  position: relative;
+  width: 50%;
+  height: 2.5rem;
+  padding: 0.2rem 1rem;
+  background: rgb(209, 209, 209);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.login-box-form-input i {
+  color: #999;
+}
+
+.login-box-form-input input {
+  width: 100%;
+  background: transparent;
+  border: 0px;
+  padding-left: 0.5rem;
+  font-weight: 1.5rem;
+  color: #000;
+}
+.login-box-form-input input::placeholder {
+  font-style: italic;
+}
+
+.login-box-form-input input:focus {
+  outline: none;
+}
