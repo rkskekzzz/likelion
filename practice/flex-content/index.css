@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.red {
+  background: #ff0000;
+}
+
+.blue {
+  background: #0000ff;
+}
