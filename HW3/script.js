@@ -22,14 +22,11 @@ const products = [
 
 buttons.forEach((item) => {
   item.addEventListener('click', () => {
-    reduced =
-      item.id == 'all'
-        ? products
-        : products.reduce((res, ele) => {
-            if (ele.type === events[item.id])
-              res.push({ name: ele.name, price: ele.price });
-            return res;
-          }, []);
+    reduced = products.reduce((res, ele) => {
+      if (ele.type === events[item.id] || item.id === 'all')
+        res.push({ name: ele.name, price: ele.price });
+      return res;
+    }, []);
     console.log(reduced);
   });
 });
